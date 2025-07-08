@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "repices",
+  "info": {
+    "singularName": "repice",
+    "pluralName": "repices",
+    "displayName": "repice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "ingredients": {
+      "type": "text",
+      "required": true
+    },
+    "instructions": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}
